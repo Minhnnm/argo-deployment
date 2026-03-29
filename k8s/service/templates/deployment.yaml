@@ -2,9 +2,10 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: my-app
-  namespace: default
+  labels:
+    app: my-app
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: my-app
@@ -13,9 +14,11 @@ spec:
       labels:
         app: my-app
     spec:
+      imagePullSecrets:               # 👈 cần nếu dùng Harbor private
+        - name: harbor-secret
       containers:
         - name: my-app
-          image: harbor.local.com/app-test/books-shop:1.0.1   # 👈 image để test
+          image: harbor.local.com/app-test/books-shop:1.0.1
           imagePullPolicy: Always
           ports:
             - containerPort: 80
