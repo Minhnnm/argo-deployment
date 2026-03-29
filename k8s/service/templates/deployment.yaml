@@ -15,6 +15,7 @@ spec:
     spec:
       containers:
         - name: my-app
-          image: nginx:latest   # 👈 image để test
+          image: harbor.local.com/app-test/books-shop:1.0.1   # 👈 image để test
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
