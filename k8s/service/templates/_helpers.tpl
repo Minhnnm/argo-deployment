@@ -22,13 +22,11 @@
 - name: SPRING_MAIL_HOST
   value: smtp.gmail.com
 - name: SPRING_MAIL_PORT
-  value: 587
+  value: "587"
 - name: SPRING_MAIL_USERNAME
   value: bookshops.app@gmail.com
-- name: SPRING_MAIL_PORT
-  value: 587
 - name: SPRING_MAIL_PASSWORD
-  value: sfdsfds2321 2131
+  value: sfdsfds2321 xvxfds
 - name: SPRING_MAIL_PROPERTIES_MAIL_SMTP_AUTH
   value: "true"
 - name: SPRING_MAIL_PROPERTIES_MAIL_SMTP_TIMEOUT
