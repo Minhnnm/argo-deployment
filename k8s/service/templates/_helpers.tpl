@@ -28,7 +28,7 @@
 - name: SPRING_MAIL_PORT
   value: 587
 - name: SPRING_MAIL_PASSWORD
-  value: qkwa zuhv qugb nuds
+  value: sfdsfds2321 2131
 - name: SPRING_MAIL_PROPERTIES_MAIL_SMTP_AUTH
   value: "true"
 - name: SPRING_MAIL_PROPERTIES_MAIL_SMTP_TIMEOUT
@@ -46,5 +46,5 @@
 - name: CLOUDINARY_API_KEY
   value: "871246556211856"
 - name: CLOUDINARY_API_SECRET
-  value: "pHwLvQgSoV9sOBogBKknNoDuxZg"
+  value: "pHwLvQgSoV9suxZg23123"
 {{- end }}
