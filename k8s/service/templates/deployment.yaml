@@ -14,11 +14,13 @@ spec:
       labels:
         app: my-app
     spec:
-      imagePullSecrets:               # 👈 cần nếu dùng Harbor private
+      imagePullSecrets:
         - name: harbor-secret
       containers:
         - name: my-app
-          image: harbor.local.com/app-test/books-shop:1.0.1
+          image: harbor.local.com:30002/app-test/books-shop:1.0.1
           imagePullPolicy: Always
           ports:
-            - containerPort: 80
+            - containerPort: 8081
+          env:
+          {{- include "common.environments" . | nindent 12 }}
